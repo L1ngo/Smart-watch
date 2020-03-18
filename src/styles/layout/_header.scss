@@ -1,0 +1,49 @@
+/* header */
+
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 3;
+
+	&__wrapper{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid #c8c8c8;
+	}
+
+	&__logo{
+		a{
+			display: block;
+			max-width: 33px;
+
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+
+	&__nav-list{
+		display: flex;
+
+		li{
+			a{
+				display: flex;
+				height: 80px;
+				margin: 0 28px;
+				padding: 0 15px;
+				align-items: center;
+				font-family: 'Sofia Pro', sans-serif;
+				font-weight: 300;
+				font-size: 12px;
+				line-height: 16px;
+				color: $black;
+			}
+		}
+	}
+
+
+}

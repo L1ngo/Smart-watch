@@ -1,0 +1,31 @@
+/* app */
+
+.app {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	min-height: 1px;
+
+  &__title {
+		margin-bottom: 20px;
+		margin-top: 155px;
+		font-family: 'Sofia Pro', sans-serif;
+		font-weight: 500;
+		font-size: 73px;
+		line-height: 77px;
+  }
+
+	&__description{
+		margin-bottom: 27px;
+		font-family: 'Sofia Pro', sans-serif;
+		font-weight: 300;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+  &__subtitle {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 32px;
+  }
+}

@@ -1,0 +1,166 @@
+/* btn */
+
+.btn {
+	display: block;
+	width: 100%;
+	max-width: 240px;
+	margin: 0 auto;
+	padding: 15px 0;
+	border: 3px solid $black;
+	border-radius: 0;
+	background-color: $white;
+
+	position: relative;
+	text-align: center;
+
+	font-weight: normal;
+	font-style: normal;
+	font-size: 20px;
+	line-height: 24px;
+	color: $black;
+
+	// animate
+	transition-property: background, color;
+	transition-duration: $transition_dur;
+	transition-timing-function: $transition_tfn;
+
+	// defaults
+	cursor: pointer;
+	outline: none;
+
+	&__src {
+		background-color: transparent;
+		border: 0;
+		padding: 0 10px;
+		height: 100%;
+
+		&-item {
+			display: block;
+			width: 15px;
+			height: 15px;
+
+			svg {
+				display: block;
+				width: 100%;
+			}
+		}
+	}
+
+	&__def {
+		display: inline-flex;
+		border: 1px solid #3589d0;
+		color: #3589d0;
+		padding: 5px 15px;
+		font-family: 'Sofia Pro', sans-serif;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 16px;
+		transition: .3s;
+
+		&:hover {
+			background-color: #3589d0;
+			color: $white;
+			transition: .3s;
+		}
+
+		&:hover svg {
+			path {
+				fill: white;
+			}
+		}
+
+		&_about {
+			padding: 11px 20px;
+			min-width: 129px;
+			align-items: center;
+			font-size: 13px;
+			color: white;
+			background-color: transparent;
+			display: block;
+			text-align: center;
+			border: 1px solid white;
+			margin-left: 35px;
+
+			&_second{
+				margin-left: 0;
+			}
+		}
+	}
+
+	&__icon {
+		display: inline-block;
+		height: 8px;
+		width: 8px;
+		margin: auto 7px 3px auto;
+
+		svg {
+			display: block;
+			width: 100%;
+			transform: rotate(90deg);
+
+			path {
+				fill: #3589d0;
+			}
+		}
+	}
+
+	&__design {
+		position: relative;
+		padding-right: 20px;
+		color: #3589d0;
+		font-family: 'Sofia Pro', sans-serif;
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 26px;
+		transition: .3s;
+
+		&:first-child {
+			margin-right: 70px;
+		}
+
+		&:before {
+			position: absolute;
+			top: 45%;
+			right: 0;
+			content: '';
+			background-color: #3589d0;
+			height: 2px;
+			width: 10px;
+			transform: rotate(45deg);
+		}
+
+		&:after {
+			position: absolute;
+			top: 70%;
+			right: 0;
+			content: '';
+			background-color: #3589d0;
+			height: 2px;
+			width: 10px;
+			transform: rotate(-45deg);
+		}
+
+		@at-root :root.hover &:hover {
+			&:before {
+				transform: rotate(45deg) scale(1.1);
+			}
+
+			&:after {
+				transform: rotate(-45deg) scale(1.2);
+			}
+		}
+
+		&_more{
+			font-size: 14px;
+			line-height: 18px;
+
+			&:before {
+				width: 7px;
+			}
+
+			&:after{
+				width: 7px;
+			}
+		}
+	}
+}
