@@ -172,7 +172,6 @@
 		</section>
 
 		<section class="product">
-			<div class="container">
 				<div class="product__wrapper">
 					<div class="design__image design__image_product">
 						<img class="lazy" data-src="images/design-logo.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Logo">
@@ -182,8 +181,33 @@
 						<a href="#" class="btn__design btn__design_more">Where to buy</a>
 						<a href="#" class="btn__design btn__design_more">Find out more</a>
 					</div>
+					<ul class="product__list">
+						<li>
+							<div class="product__list-image">
+								<img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/product_1.png" alt="Product-1">
+							</div>
+							<a href="#" class="btn__design btn__design_more">Learn more</a>
+						</li>
+						<li>
+							<div class="product__list-image">
+								<img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/product_2.png" alt="Product-2">
+							</div>
+							<a href="#" class="btn__design btn__design_more">Learn more</a>
+						</li>
+						<li>
+							<div class="product__list-image">
+								<img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/product_3.png" alt="Product-3">
+							</div>
+							<a href="#" class="btn__design btn__design_more">Learn more</a>
+						</li>
+						<li>
+							<div class="product__list-image">
+								<img class="lazy" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="images/product_4.png" alt="Product-4">
+							</div>
+							<a href="#" class="btn__design btn__design_more">Learn more</a>
+						</li>
+					</ul>
 				</div>
-			</div>
 		</section>
 
 		<section class="quote lazy" data-bg="images/quote-bg.png">
@@ -191,6 +215,17 @@
 			<p class="quote__author">-Michael Jordan</p>
 		</section>
 
+
+		<section class="contact">
+			<div class="contact__image lazy" data-bg="images/contact-top-bg.png">
+			</div>
+			<h3 class="contact__title">Stay updated</h3>
+			<p class="contact__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis</p>
+			<div class="design__row-btn design__row-btn_mb40">
+				<a href="#" class="btn__design btn__design_more">More details</a>
+				<a href="#" class="btn__design btn__design_more">Specifications</a>
+			</div>
+		</section>
 
 	</div>
 	<%= _.template(require('./parts/footer.html'))() %>
